@@ -1,10 +1,7 @@
 const checkForSpam = function (message) {
     const formatMessage = message.toLowerCase();
-    if (formatMessage.includes('spam') || formatMessage.includes('sale')) {
-      return true;
-    }
-    return false;
-  };
+    return (formatMessage.includes('spam') || formatMessage.includes('sale'))
+};
   /*
    * Вызовы функции для проверки работоспособности твоей реализации.
    */
